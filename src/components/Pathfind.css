@@ -1,8 +1,50 @@
-.wrapper {
+.Wrapper{
   max-width: 80%;
-  margin: auto;
+  margin:auto;
 }
 
-.rowWrapper {
+.rowWrapper{
+  display:flex;
+}
+
+.heading{  
   display: flex;
+  justify-content: center;
+}
+
+.grid{
+  padding: 10px;
+  display: table;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+button {
+  color: white;
+  background-color: black;
+  border-radius: 15px;
+  height: 30px;
+}
+
+.visualizeBtn {
+  margin: 10px 20px;
+}
+
+.visualizeBtn:hover {
+  color: black;
+  background-color: white;
+}
+
+.resetBtn {
+  margin: 10px 20px;
+}
+
+.resetBtn:hover {
+  color: black;
+  background-color: white;
+}
+
+.buttonDiv {
+  display: table;
+  margin: 10px auto;
 }

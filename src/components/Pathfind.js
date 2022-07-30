@@ -138,11 +138,26 @@ const Pathfind = () => {
     }
   };
 
+  const resetEverything = () => {
+    window.location.reload();
+  };
+
   return (
     <div className="wrapper">
-      <button onClick={visualizePath}>Visualize Path</button>
-      <h1>Pathfind Component</h1>
-      {gridwithNode}
+      <div className="heading">
+        <h1>Shortest Path Visualizer</h1>
+      </div>
+      <div className="grid">
+        {gridwithNode}
+      </div>
+      <div className="buttonDiv">
+        <button className="visualizeBtn" onClick={visualizePath}>
+          Visualize Path
+        </button>
+        <button className="resetBtn" onClick={resetEverything}>
+          Reset
+        </button>
+      </div>
     </div>
   );
 };
